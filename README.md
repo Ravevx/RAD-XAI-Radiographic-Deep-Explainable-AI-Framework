@@ -6,6 +6,7 @@ Explainable AI for Pneumonia Detection from Chest X-Rays
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
+<img src="assets/ui/explain predictiion.png" alt="Tab:explain prediction" width="500"/>
 
 ## What Is This Project?
 
@@ -25,6 +26,8 @@ Pneumonia is frequently missed in chest X-rays, especially in early stages and m
 
 This project solves that by providing:
 
+<img src="assets/ui/Patient browser.png" alt="Tab:Patient browser" width="500"/>
+
 -  A pneumonia classifier achieving AUC above **0.98** across all three models
 -  **Grad-CAM heatmaps** visual overlays showing where each model focused on the X-ray
 -  **Three XAI quality metrics** verifying whether the heatmaps are genuine and consistent
@@ -32,6 +35,7 @@ This project solves that by providing:
 -  **Threshold analysis** across 99 operating points to find the safest clinical setting
 -  **Case study analysis** across four clinical scenarios: correct catches, misses, and false alarms
 
+<img src="assets/ui/threshold analysis.png" alt="Tab:threshold analysis" width="500"/>
 ---
 
 ## Models
@@ -146,7 +150,8 @@ XAI_xray_analysis/
 ├── app.py                         # Main Streamlit app entry point
 ├── evaluate_all.py                # Runs full evaluation across all models and images
 ├── train.py                       # Model training script
-│ 
+├── xai_case_analysis.py           # Generates the 4 clinical case studies (TP/TN/FN/FP)
+├── xai_quality_analysis.py        # Computes XAI metrics for all 624 test images
 │
 ├── requirements.txt
 └── README.md
