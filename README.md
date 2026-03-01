@@ -1,4 +1,4 @@
-### RAD-XAI: Radiographic Deep Explainable AI Framework
+### RAD-XAI: Radiographic Deep Explainable-AI Framework
 Explainable AI for Pneumonia Detection from Chest X-Rays
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
