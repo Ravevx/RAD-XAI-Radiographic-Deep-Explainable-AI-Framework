@@ -1,0 +1,28 @@
+Model,Threshold,Filter,Total Images,AUC,Accuracy,Sensitivity,Specificity,TP,TN,FP,FN
+ResNet-18,0.1,All,624,0.9851,0.9038,0.9949,0.7521,388,176,58,2
+ResNet-18,0.1,Correct Only,564,1.0,1.0,1.0,1.0,388,176,0,0
+ResNet-18,0.1,Misclassified Only,60,0.0,0.0,0.0,0.0,0,0,58,2
+ResNet-18,0.5,All,624,0.9851,0.9375,0.9846,0.859,384,201,33,6
+ResNet-18,0.5,Correct Only,585,1.0,1.0,1.0,1.0,384,201,0,0
+ResNet-18,0.5,Misclassified Only,39,0.0,0.0,0.0,0.0,0,0,33,6
+ResNet-18,0.9,All,624,0.9851,0.9471,0.9538,0.9359,372,219,15,18
+ResNet-18,0.9,Correct Only,591,1.0,1.0,1.0,1.0,372,219,0,0
+ResNet-18,0.9,Misclassified Only,33,0.0,0.0,0.0,0.0,0,0,15,18
+DenseNet-121,0.1,All,624,0.985,0.8926,0.9949,0.7222,388,169,65,2
+DenseNet-121,0.1,Correct Only,557,1.0,1.0,1.0,1.0,388,169,0,0
+DenseNet-121,0.1,Misclassified Only,67,0.0,0.0,0.0,0.0,0,0,65,2
+DenseNet-121,0.5,All,624,0.985,0.9391,0.9897,0.8547,386,200,34,4
+DenseNet-121,0.5,Correct Only,586,1.0,1.0,1.0,1.0,386,200,0,0
+DenseNet-121,0.5,Misclassified Only,38,0.0,0.0,0.0,0.0,0,0,34,4
+DenseNet-121,0.9,All,624,0.985,0.9503,0.9641,0.9274,376,217,17,14
+DenseNet-121,0.9,Correct Only,593,1.0,1.0,1.0,1.0,376,217,0,0
+DenseNet-121,0.9,Misclassified Only,31,0.0,0.0,0.0,0.0,0,0,17,14
+ViT-Tiny,0.1,All,624,0.9823,0.8942,0.9949,0.7265,388,170,64,2
+ViT-Tiny,0.1,Correct Only,558,1.0,1.0,1.0,1.0,388,170,0,0
+ViT-Tiny,0.1,Misclassified Only,66,0.0,0.0,0.0,0.0,0,0,64,2
+ViT-Tiny,0.5,All,624,0.9823,0.9263,0.9769,0.8419,381,197,37,9
+ViT-Tiny,0.5,Correct Only,578,1.0,1.0,1.0,1.0,381,197,0,0
+ViT-Tiny,0.5,Misclassified Only,46,0.0,0.0,0.0,0.0,0,0,37,9
+ViT-Tiny,0.9,All,624,0.9823,0.9391,0.9564,0.9103,373,213,21,17
+ViT-Tiny,0.9,Correct Only,586,1.0,1.0,1.0,1.0,373,213,0,0
+ViT-Tiny,0.9,Misclassified Only,38,0.0,0.0,0.0,0.0,0,0,21,17

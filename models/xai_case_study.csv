@@ -1,0 +1,13 @@
+Scenario,Filename,True_Name,Model,Pred_Prob_Pneumonia,Pred_Name,Correct,Concentration,Faithfulness_Drop,GC_GCpp_Agreement,Top_Row,Top_Col,Focus_Quadrant
+TP — Pneumonia predicted Pneumonia,person108_bacteria_511.jpeg,PNEUMONIA,ResNet-18,0.9849,PNEUMONIA,1,0.8316,0.6822,0.6098,176,176,Bottom-Right
+TP — Pneumonia predicted Pneumonia,person108_bacteria_511.jpeg,PNEUMONIA,DenseNet-121,0.9828,PNEUMONIA,1,0.7488,0.3199,0.6568,175,144,Bottom-Right
+TP — Pneumonia predicted Pneumonia,person108_bacteria_511.jpeg,PNEUMONIA,ViT-Tiny,0.9932,PNEUMONIA,1,0.9109,0.1474,0.3066,119,55,Bottom-Left
+TN — Normal predicted Normal,NORMAL2-IM-0343-0001.jpeg,NORMAL,ResNet-18,0.0109,NORMAL,1,0.71,0.9876,0.8431,175,112,Bottom-Right
+TN — Normal predicted Normal,NORMAL2-IM-0343-0001.jpeg,NORMAL,DenseNet-121,0.0053,NORMAL,1,0.773,0.9919,0.8667,175,80,Bottom-Left
+TN — Normal predicted Normal,NORMAL2-IM-0343-0001.jpeg,NORMAL,ViT-Tiny,0.0003,NORMAL,1,0.9121,0.9882,0.147,39,152,Top-Right
+FN — Pneumonia predicted Normal (MISSED),person154_bacteria_728.jpeg,PNEUMONIA,ResNet-18,0.0005,NORMAL,0,0.6171,0.9783,0.8925,48,143,Top-Right
+FN — Pneumonia predicted Normal (MISSED),person154_bacteria_728.jpeg,PNEUMONIA,DenseNet-121,0.0069,NORMAL,0,0.6314,0.9199,0.8942,47,143,Top-Right
+FN — Pneumonia predicted Normal (MISSED),person154_bacteria_728.jpeg,PNEUMONIA,ViT-Tiny,0.0039,NORMAL,0,0.8935,0.9872,0.0085,72,167,Top-Right
+FP — Normal predicted Pneumonia (FALSE ALARM),IM-0091-0001.jpeg,NORMAL,ResNet-18,0.8763,PNEUMONIA,0,0.6679,0.5661,0.7607,176,175,Bottom-Right
+FP — Normal predicted Pneumonia (FALSE ALARM),IM-0091-0001.jpeg,NORMAL,DenseNet-121,0.5657,PNEUMONIA,0,0.8743,0.193,0.5927,112,112,Bottom-Right
+FP — Normal predicted Pneumonia (FALSE ALARM),IM-0091-0001.jpeg,NORMAL,ViT-Tiny,0.8922,PNEUMONIA,0,0.9737,0.4669,0.0207,56,120,Top-Right
