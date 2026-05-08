@@ -1,4 +1,4 @@
-# train.py  ← run this ONCE to train all 3 models
+# train.py( run this ONCE to train all 3 models)
 import os
 import torch
 import torch.nn as nn
@@ -89,7 +89,7 @@ for model_name in MODELS:
 
     torch.save(model.state_dict(), f"models/{model_name}.pth")
     scored.to_csv(f"models/{model_name}_test_scores.csv", index=False)
-    print(f"  ✅ Saved models/{model_name}.pth")
+    print(f" Saved models/{model_name}.pth")
 
 pd.DataFrame(all_metrics).T.to_csv("models/all_metrics.csv")
-print("\n✅ All done! models/all_metrics.csv saved.")
+print("\nAll done! models/all_metrics.csv saved.")
