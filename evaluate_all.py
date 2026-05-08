@@ -5,7 +5,6 @@ from sklearn.metrics import (
     roc_auc_score, accuracy_score,
     confusion_matrix, roc_curve
 )
-
 #Config
 MODELS     = ["resnet18", "densenet121", "vit_tiny"]
 THRESHOLDS = [0.10, 0.50, 0.90]
@@ -49,7 +48,6 @@ def compute_metrics(df, threshold):
         "TP": int(tp), "TN": int(tn),
         "FP": int(fp), "FN": int(fn),
     }
-
 #Main evaluation loop
 full_report_rows      = []
 threshold_report_rows = []
@@ -161,7 +159,7 @@ thresh_df = pd.DataFrame(threshold_report_rows)
 thresh_df.to_csv("models/threshold_analysis.csv", index=False)
 print(f"Saved: models/threshold_analysis.csv  ({len(thresh_df)} rows)")
 
-#Pretty print the 3-threshold summary
+#print the 3-threshold summary
 print(f"\n{'='*55}")
 print("SUMMARY — All models at threshold 0.50 (All images)")
 print(f"{'='*55}")
