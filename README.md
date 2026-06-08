@@ -28,6 +28,7 @@ This project solves that by providing:
 
 <img src="assets/ui/Patient browser.png" alt="Tab:Patient browser" width="500"/>
 
+
 -  A pneumonia classifier achieving AUC above **0.98** across all three models
 -  **Grad-CAM heatmaps** visual overlays showing where each model focused on the X-ray
 -  **Three XAI quality metrics** verifying whether the heatmaps are genuine and consistent
